@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>动画通用页头部布局</title>
+	<link href="css/headfoot.css" rel="stylesheet" type="text/css">
+</head>
+	<div class="bigbox">
+			<div class="zhongbox" name="top"><div class="top"><a href="#top"><p>up</p></a></div>
+		  <div class="daohang"></div>
+				<ul class="daohang2">
+						<li class="caidan">
+							<a href="javascript:void(0)" class="anniu">菜单</a>
+						  <div class="nr">
+  								<a href="index.html" class="xlnr" title="网站的首页">首页</a>
+  								<a href="" title="当前主题的主页" class="xlnr">主页</a>
+ 								<a href="#" class="xlnr">Link 3</a>
+							</div></li>
+					<li><a href="#">故事介绍</a></li>
+					<li><a href="#">人物介绍</a></li>
+					<li class="caidan">
+							<a href="javascript:void(0)" class="anniu">小工具</a>
+						  <div class="nr">
+  								<a href="#" class="xlnr">选集观看</a>
+								<a id="btn" class="xlnr">点我试试</a>
+ 								<a href="#" class="xlnr">Link 3</a>
+							</div></li>
+					<li class="daohang3"><a href="#">登录/注册</a></li></ul>
+		<marquee  style="font-size:6px">欢迎您来访问张泽艺小哥哥所制作的网站！本网站由：WWW.我们.love 独家冠名播出</marquee></div>
+
+</div>
+<body>
+</body>
+<script>
+var btn = document.getElementById("btn");
+var body = document.body;
+let array = ["#ffff00", "#00ff00", "#00ffff","#ff0000", "#ff7f00",  "#0000ff", "#8b00ff","#ffd700","#ff8c00","red", "blue", "yellow", "white", "black", "green", "orange","#20b2aa","#191970","#ff00ff","#ff69b4","#fff5ee","#f4a460","#d2691e","#e6e6fa","#fff0f5"];
+let index = 0;
+btn.onclick = function () {
+body.style.backgroundColor = array[index];
+index = (index + 1) % array.length;
+}
+</script>
+</html>
